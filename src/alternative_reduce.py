@@ -44,6 +44,7 @@ ax.set_xlabel('Day of the year (2020)')
 ax.set_ylabel('Number of tweets per day')
 ax.set_title('Daily tweets using each hashtag in 2020')
 ax.legend()
+ax.set_yscale('log')
 fig.tight_layout()
 
 os.makedirs(os.path.dirname(args.output_path) or '.', exist_ok=True)
